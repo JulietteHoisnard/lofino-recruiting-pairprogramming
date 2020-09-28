@@ -5,8 +5,9 @@
   "main": "greet.js",
   "scripts": {
     "test": "./node_modules/.bin/jest .",
-    "test:countChars": "./node_modules/.bin/jest ./countChars --watch",
-    "test:findString": "./node_modules/.bin/jest ./findString --watch"
+    "test:countLetters": "./node_modules/.bin/jest ./countLetters --watch",
+    "test:findString": "./node_modules/.bin/jest ./findString --watch",
+    "test:myReduce": "./node_modules/.bin/jest ./myReduce --watch"
   },
   "author": "",
   "license": "ISC",
