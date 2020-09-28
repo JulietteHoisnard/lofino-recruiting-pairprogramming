@@ -1,0 +1,20 @@
+{
+  "name": "emailsfoo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "greet.js",
+  "scripts": {
+    "test": "./node_modules/.bin/jest .",
+    "test:countChars": "./node_modules/.bin/jest ./countChars --watch",
+    "test:findString": "./node_modules/.bin/jest ./findString --watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.11.6",
+    "@babel/plugin-transform-modules-commonjs": "^7.10.4",
+    "@babel/preset-env": "^7.11.5",
+    "babel-jest": "^26.3.0",
+    "jest": "^26.4.2"
+  }
+}
