@@ -5,11 +5,26 @@
   "version": "0.2.0",
   "configurations": [
     {
+      "name": "Debug",
       "type": "node",
       "request": "launch",
-      "name": "Launch Program",
-      "skipFiles": ["<node_internals>/**"],
-      "program": "${workspaceFolder}/debug.js"
+      "program": "${workspaceRoot}/debug.js",
+      "stopOnEntry": false,
+      "args": [],
+      "cwd": "${workspaceRoot}",
+      "preLaunchTask": null,
+      "runtimeExecutable": null,
+      "runtimeArgs": [
+        "--nolazy",
+        "--require",
+        "${workspaceRoot}/node_modules/babel-register"
+      ],
+      "env": {
+        "NODE_ENV": "development"
+      },
+      "console": "internalConsole",
+      "sourceMaps": true,
+      "outFiles": []
     }
   ]
 }

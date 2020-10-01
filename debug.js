@@ -1,4 +1,7 @@
-import countLetters from "./countLetters/countLetters";
+import { findString } from "./findString/findString";
 
-var result = countLetters("Hello World");
+const input = {};
+
+const result = findString(input, "foo");
+
 console.log(result);
