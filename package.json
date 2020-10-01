@@ -4,6 +4,7 @@
   "description": "",
   "main": "greet.js",
   "scripts": {
+    "debug": "node ./debug.js",
     "test": "./node_modules/.bin/jest .",
     "test:countLetters": "./node_modules/.bin/jest ./countLetters --watch",
     "test:findString": "./node_modules/.bin/jest ./findString --watch",
