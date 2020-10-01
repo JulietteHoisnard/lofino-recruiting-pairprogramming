@@ -6,6 +6,7 @@
   "scripts": {
     "debug": "node ./debug.js",
     "test": "./node_modules/.bin/jest .",
+    "test:countNumbers": "./node_modules/.bin/jest ./warmup --watch",
     "test:countLetters": "./node_modules/.bin/jest ./countLetters --watch",
     "test:findString": "./node_modules/.bin/jest ./findString --watch",
     "test:myReduce": "./node_modules/.bin/jest ./myReduce --watch"
