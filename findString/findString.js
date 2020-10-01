@@ -3,7 +3,6 @@
  * TS type definition of obj would be
  *
  * {
- *  people?: Array<{ email: string }>;
  *  places?: Array<string | { city: string, street: string, country: string }>;
  *  books?: Array<{ title: string, author: string }>;
  * }
@@ -12,13 +11,6 @@
  */
 export function findString(obj, searchString) {
   let strings = [];
-  if (obj.people !== undefined) {
-    let emails = obj.people.map((person) => {
-      validatePerson(person);
-      return sanitizeEmail(person.email);
-    });
-    emails.forEach((s) => strings.push(s));
-  }
 
   if (obj.places !== undefined) {
     obj.places.forEach((place) => {
@@ -47,13 +39,4 @@ export function findString(obj, searchString) {
 
 function getAddressStrings(address) {
   return [address.street, address.country, address.city];
-}
-
-function validatePerson(person) {
-  if (!person) throw new Error("person is undefined");
-  if (!person.email) throw new Error("person has no email");
-}
-
-function sanitizeEmail(emailAddress) {
-  return emailAddress.trim().toLowerCase();
 }

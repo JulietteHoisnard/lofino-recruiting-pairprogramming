@@ -6,23 +6,6 @@ it("returns empty array on empty input", () => {
   expect(result).toStrictEqual([]);
 });
 
-it("finds string in person email", () => {
-  const input = {
-    people: [
-      {
-        email: "foo@bar.com",
-      },
-      {
-        email: "fizz@buzz.com",
-      },
-    ],
-  };
-
-  const result = findString(input, "foo");
-
-  expect(result).toStrictEqual(["foo@bar.com"]);
-});
-
 it("finds string in plain place addresses", () => {
   const input = {
     places: [
