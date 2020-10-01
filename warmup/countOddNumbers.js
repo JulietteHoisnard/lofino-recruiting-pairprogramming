@@ -6,6 +6,9 @@
  * countOddNumbers(5) should return 3, because 1, 3 and 5 are odd.
  */
 export default function countOddNumbers(n) {
-  // TODO: implement
-  return 0;
+  let counter = 0;
+  for (let i = 0; i <= n; i++) {
+    i % 2 === 0 ? counter : counter += 1;
+  }  
+  return counter;
 }

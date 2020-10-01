@@ -20,4 +20,21 @@
  */
 export default function countLetters(input) {
   // TODO: implement
+    const arrayLetters = input.toLowerCase().split('').filter(letter => letter.match((/^[A-Za-z]+$/)))
+  // const letterCounter = {};
+  return arrayLetters.reduce((accumulator, currentValue) => {
+    if (accumulator[currentValue] === undefined){
+        accumulator[currentValue] = 0;
+      } 
+    accumulator[currentValue] += 1;
+    return accumulator;
+  }, {});
+  // arrayLetters.forEach(letter => {
+
+  //   if (letterCounter[letter] === undefined){
+  //     letterCounter[letter] = 0;
+  //   } 
+  //   letterCounter[letter] += 1;
+  // })
+  // return letterCounter;
 }
